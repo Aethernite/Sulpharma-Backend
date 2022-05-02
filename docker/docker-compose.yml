@@ -1,0 +1,11 @@
+mysql:
+  image : mysql:5.7
+  ports:
+    - "3306:3306"
+  volumes:
+    - ~/db/mysql:/var/lib/mysql
+  environment:
+    MYSQL_USER: sulpharma
+    MYSQL_PASSWORD: password
+    MYSQL_ROOT_PASSWORD: password
+  container_name: sulpharma-mysql
