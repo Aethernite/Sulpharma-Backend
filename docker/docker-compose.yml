@@ -1,11 +1,15 @@
-mysql:
-  image : mysql:5.7
-  ports:
-    - "3306:3306"
-  volumes:
-    - ~/db/mysql:/var/lib/mysql
-  environment:
-    MYSQL_USER: sulpharma
-    MYSQL_PASSWORD: password
-    MYSQL_ROOT_PASSWORD: password
-  container_name: sulpharma-mysql
+version: '3.1'
+
+services:
+
+  db:
+    image: mariadb
+    restart: always
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=sulpharma
+      - MYSQL_USER=sulpharma
+      - MYSQL_PASSWORD=password
