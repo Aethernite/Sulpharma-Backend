@@ -1,13 +1,17 @@
 
 
-[![Contributors][contributors-shield]][https://github.com/Aethernite]
-[![MIT License][license-shield]][https://mit-license.org/]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/borislav-arangelov-6b46801b6/]
+<p align="center">
+    <a href="#">
+        <img src="https://img.shields.io/circleci/project/github/badges/shields/master" alt="build status">
+    </a>
+      
+</p>
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://i.imgur.com/6CdCqo3.png)
+![API Image](https://i.imgur.com/6CdCqo3.png)
 
 Sulpharma is a project that I did for my Bachelor's Degree in Technical University of Sofia. The project is basically an online pharmacy shop providing many features regarding products, price information and promotions. It also shows all the physical pharmacy locations using a map integration.
 
